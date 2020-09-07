@@ -7,12 +7,18 @@
     <title>Administrador de Pacientes</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 </head>
 <body>
     <h2 class="text-center my-5 titulo">Administrador de Pacientes de Veterinaria</h2>
     <div class="container mt-5 p-5">
+        <div id="mensajes"></div>
         <div id="contenido" class="row">
             <div class="col-md-6 agregar-cita">
+               
+
                 <form id="nueva-cita">
                     <legend class="mb-4">Datos del Paciente</legend>
                     <div class="form-group row">
@@ -36,7 +42,7 @@
                     <div class="form-group row">
                         <label class="col-sm-4 col-lg-4 col-form-label">Fecha:</label>
                         <div class="col-sm-8 col-lg-8">
-                            <input type="date" id="fecha" name="fecha" class="form-control">
+                            <input type="text"  id="fecha" name="fecha"  class="form-control datepicker" autocomplete="off">
                         </div>
                     </div>
 
@@ -66,6 +72,7 @@
     </div><!--.container-->
 
     <script src="js/app.js"></script>
+    
 
 </body>
 </html>
